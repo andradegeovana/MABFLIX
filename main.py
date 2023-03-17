@@ -39,7 +39,17 @@ def run(steps, bracos, func_recompensa, politica, verbose=False):
 
 
 def recompensando(bracos[braco], step):
-    return bracos[braco] + uniform(0, 1) #ta errado, rever como faz a recompensa
+    if bracos[braco] == bracos[0]:
+        return uniform(0, 0.2)
+    elif bracos[braco] == bracos[1]:
+        return uniform(0, 0.5)
+    elif bracos[braco] == bracos[2]:
+        return uniform(0, 0.4)
+    elif bracos[braco] == bracos[3]:
+        return uniform(0, 1)
+    else: 
+        return uniform(0, 0.6)
+    #ta errado, rever como faz a recompensa
 
 run(50, ["acao", "aventura", "romance", "terror", "infantil"], recompensando(), )
 
