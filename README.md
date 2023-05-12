@@ -2,6 +2,11 @@
 
 ## Anotações:
 
+Funções:
+  ◦ init -> inicializa os braços e as recompensas
+  ◦ update -> atualiza as recompensas
+  ◦ act -> selecionar por probabilidade
+
 Epsilon -> número entre 0 e 1, taxa de algo, porcentagem de vezes que ele escolhe
 
 Epsilon: 
